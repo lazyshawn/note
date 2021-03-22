@@ -200,4 +200,19 @@ endglobal
 ```
 
 
+## § Notes
+### Python
+* 查看类的所有成员变量及成员函数。`dir(<object>)`
+
+### UltiSnips Debug
+* For custom context snippet, special properties only work within context
+expression, and the result will be passed to 'snip.context'.
+```bash
+# 'snip.line' works in "contex expression".
+snippet r "return" "snip.line" be
+`!p snip.rv = snip.context`
+return err
+endsnippet
+```
+
 
