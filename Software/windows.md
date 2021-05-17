@@ -1,4 +1,4 @@
-## § Windows常用软件推荐
+## ✨ Windows常用软件推荐
 1. [PDF阅读器](#pdf阅读器)
 1. [压缩软件](#压缩软件)
 1. [视频软件](#视频软件)
@@ -26,15 +26,18 @@ https://www.tracker-software.com/product/pdf-xchange-viewer/download?fileid=446)
 
 
 ### 视频软件
-> [potplayer](potplayer.daum.net)
-
-进入官网需要翻墙。功能齐全，启动速度快。
-
+1. [potplayer](potplayer.daum.net):
+视频播放软件。进入官网需要翻墙。功能齐全，启动速度快。
+1. [哔哩哔哩直播姬](https://live.bilibili.com/liveHime): 录屏、直播。
+1. obs: 录屏、直播。
+1. Adobe Premiere Pro(PR): 视频处理。
 
 ### 图片查看器
-> [honeyview](http://www.bandisoft.com/honeyview/)
-
+1. [honeyview](http://www.bandisoft.com/honeyview/):
 启动速度快。支持查看、右键预览PSD、RAW等格式文件，但不支持svg格式。
 轻松查看图片拍摄时的参数(EXIF信息)。
 简单调整图片，旋转、裁剪、品质设置、格式转换、智能对开等。
+1. Adobe Photo Shop(PS): 图片处理。
+1. Adobe Illustrator(AI): 矢量图制作与处理。
+
 
