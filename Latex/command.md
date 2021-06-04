@@ -1,3 +1,5 @@
+1. [do](#✨-command-%5Cdo)
+
 ## ✨ Command `\do`
 > 简而言之，\do 就是一个命令的别名。常在需要重复执行某命令时使用。
 
@@ -63,7 +65,7 @@ delimiter could have been used. One example of this is used in `\@whilenum` or
 as part of `\@for` (loop) constructions.
 
 
-## ✨ Refernece
+### Refernece
 1. [What does \do do? --- StackExchange](
 https://tex.stackexchange.com/questions/331483/what-does-do-do)
 
