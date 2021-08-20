@@ -1,4 +1,4 @@
-## § Introduction to UltiSnips
+## ✨ Introduction to UltiSnips
 > [GitHub -- UltiSnips](
 https://github.com/SirVer/ultisnips)
 
@@ -200,7 +200,7 @@ endglobal
 ```
 
 
-## § Notes
+## ✨ Notes
 ### Python
 * 查看类的所有成员变量及成员函数。`dir(<object>)`
 
