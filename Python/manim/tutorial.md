@@ -61,9 +61,13 @@ from manim import *
 
 class DemoOfManim(Scene):
     def construct(self):
-        obj = Square()  # create a square
+        # create a object
+        obj = Square()
+        # change propertity
         obj.set_fill(BLUE, opacity=1.0)
+        # add objects to scene
         self.add(obj)
+        # play animations
         self.play(Rotate(obj,PI/2), run_time=2)
         #  self.play(obj.animate(run_time=2).flip())
         #  self.play(obj.animate(run_time=2).scale(3,about_point=np.array([1,1,0])))
