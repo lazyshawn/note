@@ -188,3 +188,39 @@ void bfs(int row, int col, std::vector<std::vector<bool>> &ocean) {
 }
 ```
 
+### Dijkstra 算法
+> 求一个图中一个点到其他所有点的最短路径
+
+输入: 邻接矩阵图;  
+维护: 2 个数组 --- `dist` 已访问的点到起点的最短距离; `used` 各个点的访问状态。  
+算法:
+1. 初始化维护的数组。`dist` 中起点值为0，其余值为inf; `used` 值全为 `0/false` ;
+1. 从 `used` 中取出到起点路径最短的点，放入 `result` 中，并更新 `used` ;
+1. 动态规划，更新 `dist` 中各个点的值;
+1. 重复 2~3 直至 `used` 全为 `true`.
+
+```cpp
+std::vector<int> Solution::dijkstra(std::vector<std::vector<int>> graph, int startIndex) {
+  // 初始化
+  const int n = graph.size(), inf = INT_MAX/2;
+  std::vector<int> dist(n,inf), used(n);
+  dist[startIndex] = 0;
+
+  for (int i=0; i<n; ++i) {
+    // 找到未访问的最小值
+    int index = -1;
+    for (int j=0; j<n; ++j) {
+      if (!used[j] && (index+1==0 || dist[j] < dist[index])) {
+        index = j;
+      }
+    }
+    used[index] = true;
+    // 更新到起点距离
+    for (int i=0; i<n; ++i) {
+      dist[i] = min(dist[i], dist[index]+graph[index][i]);
+    }
+  }
+  return dist;
+}
+```
+
